@@ -3,7 +3,7 @@
 // CODELAB: Update cache names any time any of the cached files change.
 const PRECACHE = 'precache-v1';
 const RUNTIME = 'runtime';
-const FILES_TO_CACHE = [
+const PRECACHE_URLS = [
   '/index.html',
   '/js/animframe_polyfill.js',
   '/js/application.js',
