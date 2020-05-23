@@ -16,7 +16,9 @@ const PRECACHE_URLS = [
   '/js/local_storage_manager.js',
   '/js/tile.js',
   '/style/fonts/clear-sans.css',
-  '/style/main.css'
+  '/style/main.css',
+  '/images/google-play.png',
+  '/images/chrome-app-2048-game.png'
 ];
 
 
