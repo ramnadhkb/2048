@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
+  <title>2048 Offline version with PWA</title>
   <link rel="manifest" href="/manifest.json">
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -15,7 +15,14 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="description" content="2048 offline version powered by PWA. Created from original 2048 and copy of it.">
+  <meta name="description" content="Play 2048 game offline version powered by PWA. Created from original 2048 and a simple copy of it.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="game">
+  <meta property="og:title" content="2048 Game">
+  <meta property="og:description" content="Play 2048 game offline version powered by PWA. Created from original 2048 and a simple copy of it.">
+  <meta property="og:url" content="https://2048.skyafar.com/">
+  <meta property="og:site_name" content="2048 Game">
+  <meta property="og:image" content="http://2.bp.blogspot.com/-VGo5EFdMWo0/UyHIDPpBxVI/AAAAAAAACKw/JguA0VL5YGo/s1600/2048.png">
   <meta name="theme-color" content="#faf8ef" />
   <script type="text/javascript">
     if ('serviceWorker' in navigator) {
@@ -42,7 +49,15 @@
       <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
       <a class="restart-button">New Game</a>
     </div>
-
+    <hr>
+    <div class="sharing-bt">
+      <a href="https://play.google.com/store/apps/details?id=com.myspecialgames.advanced2048game" target="_blank" title="2048 Game Android APP">
+        <img width="240px" class="banner-ad" src="images/google-play.png" alt="2048 Game Android APP" title="2048 Game Android APP"/>
+        </a>
+      <a href="https://chrome.google.com/webstore/detail/2048-game/afhppeoclpbhpopnpnkooifpefoiolbd" rel="nofollow" target="_blank" title="2048 game for Google Chrome">
+        <img width="240px" src="images/chrome-app-2048-game.png" alt="2048 game for Google Chrome" title="2048 game for Google Chrome"/>
+        </a>
+    </div>
     <div class="game-container">
       <div class="game-message">
         <p></p>
@@ -88,13 +103,12 @@
       <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
     </p>
     <hr>
+    <p>2048 is a recently popular game. It is very addictive and time consuming yet good to improve skills. Game is named as 2048, but can score alot more than that if you continue to play after 2048. Recently we updated this game to make it easy to share your scores with everyone. Play and Enjoy.</p>
     <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+    Created by <a href="http://gabrielecirulli.com" target="_blank" rel="nofollow noopener noreferrer">Gabriele Cirulli</a>. Hosted by <a href="https://www.skyafar.com" target="_blank">Skyafar</a>. 
     </p>
-    <hr>
-    <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
-    </p>
+    <div class="sharing-bt"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://2048.www.skyafar.com/" data-text="Join the numbers and get to the maximum in a tile!" data-via="skyafar" data-size="large" data-related="skyafar" data-hashtags="2048game">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
   </div>
 
   <script src="js/bind_polyfill.js"></script>
